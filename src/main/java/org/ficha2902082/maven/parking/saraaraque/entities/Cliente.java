@@ -26,6 +26,7 @@ public class Cliente {
      this.misCarros.add(c);
 }
 
+
 //sobrecarga del metodo addCar
 public void addCar(String placa, TipoVehiculo tv){
     //construir(instanciar)
@@ -34,6 +35,15 @@ public void addCar(String placa, TipoVehiculo tv){
     c.tipoVehiculo = tv;
         this.misCarros.add(c);
      }
+public Cliente() {
+}
+public Cliente(String nombre, String apellido, TipoDocumento tipoDocumento, Long numeroDocumento, Long celular) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.tipoDocumento = tipoDocumento;
+    this.numeroDocumento = numeroDocumento;
+    this.celular = celular;
+    this.misCarros = new ArrayList<Carro>();}
  
 
  // Sobrecarga de metodos;
